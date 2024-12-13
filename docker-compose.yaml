@@ -1,0 +1,8 @@
+services:
+  chatroom:
+    build: .
+    ports:
+      - "7777:8080"
+    environment:
+      - CALC_PORT=8080
+      - MAX_USERS=20
